@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img_w_text {
+  display: grid;
+  align-items: start;
+}
+
+.img_w_text > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .billede1 {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .billede2 {
+    grid-row: 1 / span 1;
+  }
+
+  .billede3 {
+    grid-row: 1 / span 1;
+  }
+
+  .billede4 {
+    grid-row: 2 / span 1;
+  }
+
+  .billede5 {
+    grid-row: 2 / span 1;
+  }
+
+  .grid_video_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid_1-1-1,
+img {
+  object-fit: cover;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.billede1 {
+  display: grid;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  padding-right: 2rem;
+  aspect-ratio: 993/692;
+  object-fit: contain;
+  margin-left: 10px;
+}
+.billede2 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  object-fit: cover;
+}
+.billede3 {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+  padding-right: 1rem;
+}
+
+.billede4 {
+  grid-column: 2/3;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+}
+
+.billede5 {
+  grid-column: 3/4;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.video1 {
+  display: grid;
+  grid-column: 1/2;
+  width: 100%;
+  height: auto;
+}
+
+.video2 {
+  display: grid;
+}
+
+.grid_video_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
